@@ -9,6 +9,11 @@ OBJ = $(SRC:.c=.o)
 
 all: options st
 
+patch:
+	for i in patches/*.diff; do \
+		patch -p1 < "$$i"; \
+	done
+
 options:
 	@echo st build options:
 	@echo "CFLAGS  = $(STCFLAGS)"
