@@ -22,6 +22,7 @@ options:
 
 config.h:
 	cp config.def.h config.h
+	patch -p1 < patches/config.h.patch
 
 .c.o:
 	$(CC) $(STCFLAGS) -c $<

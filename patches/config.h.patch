@@ -1,5 +1,5 @@
---- a/config.h	2020-01-30 23:33:19.464198516 +0100
-+++ b/config.h	2020-01-30 23:33:48.170709667 +0100
+--- a/config.h	2020-01-31 17:08:35.362872475 +0100
++++ b/config.h	2020-01-31 17:09:30.722572566 +0100
 @@ -5,7 +5,7 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
