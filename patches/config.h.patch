@@ -1,0 +1,20 @@
+--- config.h.orig	2020-03-23 19:43:03.509634413 +0100
++++ config.h	2020-03-23 19:42:13.276226105 +0100
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
++static char *font = "mono:size=9:antialias=true:autohint=true";
+ static int borderpx = 2;
+ 
+ /*
+@@ -49,7 +49,7 @@
+  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
+  * attribute.
+  */
+-static unsigned int blinktimeout = 800;
++static unsigned int blinktimeout = 0;
+ 
+ /*
+  * thickness of underline and bar cursors

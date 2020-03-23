@@ -14,7 +14,7 @@ patch:
 		patch -p1 <$$i; \
 	done
 	cp config.def.h config.h
-	patch -p1 <patches/config.h.patch
+	patch <patches/config.h.patch
 
 options:
 	@echo st build options:
