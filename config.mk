@@ -3,6 +3,10 @@ VERSION = 0.8.2
 
 # Customize below to fit your system
 
+CPPFLAGS = -DNDEBUG
+CFLAGS = -flto -Os
+LDFLAGS = -O3 -flto -s
+
 # paths
 PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
