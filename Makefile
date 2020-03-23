@@ -11,8 +11,10 @@ all: options st
 
 patch:
 	for i in patches/*.diff; do \
-		patch -p1 < "$$i"; \
+		patch <"$$i"; \
 	done
+	cp config.def.h config.h
+	patch <patches/config.h.patch
 
 options:
 	@echo st build options:
