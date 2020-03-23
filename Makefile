@@ -9,6 +9,13 @@ OBJ = $(SRC:.c=.o)
 
 all: options st
 
+patch:
+	for i in patches/*.diff; do \
+		patch -p1 <$$i; \
+	done
+	cp config.def.h config.h
+	patch -p1 <patches/config.h.patch
+
 options:
 	@echo st build options:
 	@echo "CFLAGS  = $(STCFLAGS)"
