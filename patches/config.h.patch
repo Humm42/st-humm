@@ -1,11 +1,11 @@
---- a/config.h	2020-01-31 17:08:35.362872475 +0100
-+++ b/config.h	2020-01-31 17:09:30.722572566 +0100
+--- config.h.orig	2020-03-19 04:20:44.638571954 +0100
++++ config.h	2020-03-19 04:21:44.698778868 +0100
 @@ -5,7 +5,7 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
   */
 -static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-+static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
++static char *font = "mono:size=9:antialias=true:autohint=true";
  static int borderpx = 2;
  
  /*
